@@ -17,6 +17,7 @@
 
 <h2 id="overview">Overview</h2>
 
+<h3>About</h3>
 <p>
 The Securities and Exchange Commission's (SEC) Form 13F is a quarterly report that is required 
 to be filed by all institutional investment managers with at least $100 million in assets under management. 
@@ -28,14 +29,14 @@ competitors and the public.
 
 My goal is to create a webapp with a more user-friendly interface to view SEC 13F filings. 
 
-Why would you want to view SEC 13F filings?
+<h3>Why would you want to view SEC 13F filings?</h3>
 <ul>
-  <li>Allows an individual to analyse/view investment holdings of large institutional managers, such as hedge funds</li>
-  <li>This information can server as a valuable learning experience for investors.</li>
+  <li>Allows an individual to analyze/view investment holdings of large institutional managers, such as hedge funds</li>
+  <li>This information can serve as a valuable learning experience for investors.</li>
   <li>Monitor all institutional ownerships in real-time.</li>
 </ul>
 
-Limitations & caveats
+<h3>Limitations & caveats</h3>
 <ul>
   <li>The SEC does not review the information in the filing and 
   has not determined if it is accurate and complete. The reader should not assume 
@@ -53,13 +54,13 @@ See https://www.investopedia.com/terms/f/form-13f.asp for information.
 
 
 
-My application is hosted on Heroku.
+My application is hosted on Heroku. See link below.
 
 <br>
 <h3 id="link">Link to webpage:</h3>
 <p>https://pro-owl.herokuapp.com</p>
 
-<h3 id="screenshot">Screenshot</h3> 
+<h3 id="screenshot">Screenshots:</h3> 
 
 <h3>Welcome page</h3>
 
@@ -104,25 +105,19 @@ Analytics
 
 
 <h3 id="whatILearned">What I Learned</h3> 
-This was a fun project and I learned the following:
-
-Backend:
-
+This was a fun project and I learned how to:
+<br><br>
 <ul>
   <li>Build models/schemas with Mongoose</li>
-  <li>Utilized JSON web tokens to securely transmit data between frontend and backend </li>
-  <li>Practiced using controllers, middleware, and routers to solidify my learning</li>
+  <li>Hash passwords for user database</li>
+  <li>Utilize JSON web tokens to securely transmit data between the frontend and backend </li>
+  <li>Practice using controllers, middleware, and routers to solidify my learning</li>
+  <li>Practice creating separate React components, such as headers and spinners</li>
+  <li>Learn about React states and how to implement</li>
+  <li>Learn how to implement useDispatch to dispatch an action</li>
 </ul>
 
-Frontend: 
-
-<ul>
-  <li></li>
-  <li></li>
-
-</ul>
-
-<h3 id="optimizations">Optimizations:</h3>
+<h3 id="optimizations">Optimizations</h3>
 There are many additional features I plan to include, such as the following items: 
 <br><br>
 <ul>
@@ -130,3 +125,6 @@ There are many additional features I plan to include, such as the following item
   <li>Search institutional investment managers by name</li>
   <li>Additional features in the user dashboard - watchlist, other SEC company filngs, improve the overall UX/UI</li>
 </ul>
+
+<h3 id="development">Development</h3>
+
