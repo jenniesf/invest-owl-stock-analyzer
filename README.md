@@ -112,7 +112,7 @@ This was a fun project and I learned how to:
   <li>Hash passwords for user database</li>
   <li>Utilize JSON web tokens to securely transmit data between the frontend and backend </li>
   <li>Practice using controllers, middleware, and routers to solidify my learning</li>
-  <li>Practice creating separate React components, such as headers and spinners</li>
+  <li>Practice creating separate React components, such as headers, forms, and spinners</li>
   <li>Learn about React states and how to implement</li>
   <li>Learn how to implement useDispatch to dispatch an action</li>
 </ul>
