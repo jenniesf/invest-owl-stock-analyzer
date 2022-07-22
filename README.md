@@ -13,6 +13,14 @@
       <li><a href="#whatILearned">What I Learned</a></li>
       <li><a href="#optimizations">Optimizations</a></li>
     </ol>
+<!--    <li><a href="#development">Getting started with development</a></li>
+    <ol>
+      <li><a href="#development">Development</a></li>
+   </ol> -->
+   <li><a href="#author">Author</a></li>
+    <ol>
+      <li><a href="#author">Portfolio</a></li>
+    </ol>
 </ol>
 
 <h2 id="overview">Overview</h2>
@@ -33,7 +41,7 @@ My goal is to create a webapp with a more user-friendly interface to view SEC 13
 <ul>
   <li>Allows an individual to analyze/view investment holdings of large institutional managers, such as hedge funds</li>
   <li>This information can serve as a valuable learning experience for investors.</li>
-  <li>Monitor all institutional ownerships in real-time.</li>
+  <li>Monitor all institutional ownership filings in real-time.</li>
 </ul>
 
 <h3>Limitations & caveats</h3>
@@ -66,33 +74,48 @@ My application is hosted on Heroku. See link below.
 
 ![owl-homepage](https://user-images.githubusercontent.com/99220339/180356304-e9b71b23-593b-441f-9fe0-8cfa2dbf38c7.png)
 
+<h3>Register an account</h3>
+
+![owl-register](https://user-images.githubusercontent.com/99220339/180469156-75aada45-2a90-4768-b3db-e79a25650a10.png)
+
 <h3>User's dashboard</h3>
 
 ![owl-userdashboard](https://user-images.githubusercontent.com/99220339/180356265-fe2c4c97-54d9-4a7b-9790-29391caaf165.png)
 
 <h2 id="process">My Process</h2>
 <h3 id="builtWith">Built With:</h3>
+
+<h3 id="howItWorks">Technologies and Frameworks</h3>
 <ul>
   <li>React</li>
+  <li>React-router</li>
   <li>Redux</li>
   <li>MongoDB</li>
   <li>Node.js</li>
   <li>Express</li>
-  <li>Javascript/HTML/CSS</li>
+  <li>Bcryptjs</li>
+  <li>JSON Web Token</li>
+  <li>Javascript</li>
+  <li>HTML/CSS</li>
 </ul>
-
-
-
 
 <h3 id="howItWorks">How It Works</h3>
 
+<p>
+As a retail investor myself, I enjoy researching companies before I decide to invest in a company. 
+Often times I find myself struggling to find new companies to invest. There are over 2,000 companies listed on the New York Stock Exchange. Here comes Form 13F - a quarterly report that is required to be filed by all institutional investment managers with at least $100 million in assets under management. The 13F is a great resource to find new ideas for companies to invest and research what Wall Street/Money Managers are investing and holding on quarterly basis. 
+</p>
+<p>
+My goal is to create an app where I can view all 13F filings in one place and where I have 
+the historical information to review. I plan to include a comparison feature to view 13F comparisons between quarters. 
+In addition to 13F filings, I plan to include additional search functions for other SEC filings, such as Annual Reports on 10Ks, Earning Calls, Financial Statements etc. 
+</p>
 
-Upon entering a name and quote and clicking the button, the quote/name data is stored in a MongoDB database.
-The page is redirected (aka refreshed) and the new name/quote is shown on the page. 
-Additionally, the user can 'like' and 'delete' names/quotes from the page and database by clicking the 'thumbs up' and 'trash' icons. 
-The number of 'likes' on the page will increase by 1 upon each 'thumbs up' click. 
+Upon loading the webpage, an unauthenticated user is directed to the home/welcome page and authenticated user is directed to their dashboard. The home/welcome page includes a snippet about the site and the user can either log in or register a new account. 
 
-Analytics
+Once authenticated or registered, the user is directed to their dashboard. Here, the user can search for 13F filings. In order to obtain data from the backend and API and display the data, two parameters are necessary: company CIK and reporting period. CIK is a SEC ID to identify corporations and individual people who have filed disclosure with the SEC. The form fields include an example of the reporting period format as a placeholder. (I plan to add a company search feature so users are not required to enter CIKs.) Using React, the Form 13F information is displayed on the dashboard. 
+
+<!-- Analytics
 
 <ul>
   <li>React</li>
@@ -102,7 +125,7 @@ Analytics
   <li>Express</li>
   <li>Javascript/HTML/CSS</li>
 </ul>
-
+ -->
 
 <h3 id="whatILearned">What I Learned</h3> 
 This was a fun project and I learned how to:
@@ -126,5 +149,12 @@ There are many additional features I plan to include, such as the following item
   <li>Additional features in the user dashboard - watchlist, other SEC company filngs, improve the overall UX/UI</li>
 </ul>
 
-<h3 id="development">Development</h3>
+<!-- <h2 id="development">Getting started with development</h2>
+<h3 id="Development">Development</h3>
+ -->
 
+<h2 id="author">Author</h2>
+
+<ul>
+  <li>Portfolio: https://jcsf.netlify.app/</li>
+</ul>
