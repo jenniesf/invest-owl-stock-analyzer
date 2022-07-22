@@ -23,11 +23,14 @@ My application is hosted on Heroku.
 <p>https://pro-owl.herokuapp.com/welcome</p>
 
 <h3 id="screenshot">Screenshot</h3> 
-<h4>Welcome page</h4>
-![owl-homepage](https://user-images.githubusercontent.com/99220339/180356056-d50ecd0a-70f8-44f9-b3c0-e2370f7632d5.png)
-<h4>User's dashboard</h4>
-![owl-userdashboard](https://user-images.githubusercontent.com/99220339/180356111-80180050-9c25-4d6e-bf9f-c9ab3f07b607.png)
 
+<h3>Welcome page</h3>
+
+![owl-homepage](https://user-images.githubusercontent.com/99220339/180356304-e9b71b23-593b-441f-9fe0-8cfa2dbf38c7.png)
+
+<h3>User's dashboard</h3>
+
+![owl-userdashboard](https://user-images.githubusercontent.com/99220339/180356265-fe2c4c97-54d9-4a7b-9790-29391caaf165.png)
 
 <h2 id="process">My Process</h2>
 <h3 id="builtWith">Built With:</h3>
