@@ -58,7 +58,7 @@ function Welcome() {
         <h4>Have suggestions or questions?</h4>
         <h5>send them and we will get back to you as soon as possible</h5>
         <button className='contact-btn'>
-            <a href="mailto:jenniec2655@gmail.com">
+            <a href="">
                 Contact us
             </a>
         </button>
