@@ -1,4 +1,4 @@
-# owl-project
+# invest-owl-stock-analyzer
 <h2>Table of Contents</h2>
 <ol>
   <li><a href="#overview">Overview</a></li>
@@ -16,11 +16,48 @@
 </ol>
 
 <h2 id="overview">Overview</h2>
-I built a full-stack CRUD application to track my favorite & popular quotes and store in a MongoDB database. <br>
+
+<p>
+The Securities and Exchange Commission's (SEC) Form 13F is a quarterly report that is required 
+to be filed by all institutional investment managers with at least $100 million in assets under management. 
+It discloses their equity holdings and can provide insights into what the smart money is doing in the market.
+
+Hedge funds are required to file Form 13F within 45 days after the last day of the calendar quarter. 
+Most funds wait until the end of this period in order to conceal their investment strategy from 
+competitors and the public.
+
+My goal is to create a webapp with a more user-friendly interface to view SEC 13F filings. 
+
+Why would you want to view SEC 13F filings?
+<ul>
+  <li>Allows an individual to analyse/view investment holdings of large institutional managers, such as hedge funds</li>
+  <li>This information can server as a valuable learning experience for investors.</li>
+  <li>Monitor all institutional ownerships in real-time.</li>
+</ul>
+
+Limitations & caveats
+<ul>
+  <li>The SEC does not review the information in the filing and 
+  has not determined if it is accurate and complete. The reader should not assume 
+  that the information is accurate and complete.</li>
+  <li>Filings are not timely - Most managers submit their 13Fs as late as 
+  possible because they do not want to tip off rivals to what they are doing.</li>
+  <li>A risk for both professional and retail investors is the tendency 
+  to borrow investment ideas from one another. Hedge fund managers are no more 
+  immune to behavioral biases than anyone else.</li>
+  <li>Funds are only required to report long positions. This can give an incomplete picture, because some funds generate most of their returns from their short-selling.</li>
+</ul>
+
+See https://www.investopedia.com/terms/f/form-13f.asp for information. 
+</p>
+
+
+
 My application is hosted on Heroku.
-<br><br>
+
+<br>
 <h3 id="link">Link to webpage:</h3>
-<p>https://pro-owl.herokuapp.com/welcome</p>
+<p>https://pro-owl.herokuapp.com</p>
 
 <h3 id="screenshot">Screenshot</h3> 
 
@@ -35,29 +72,61 @@ My application is hosted on Heroku.
 <h2 id="process">My Process</h2>
 <h3 id="builtWith">Built With:</h3>
 <ul>
+  <li>React</li>
+  <li>Redux</li>
   <li>MongoDB</li>
   <li>Node.js</li>
   <li>Express</li>
-  <li>EJS</li>
   <li>Javascript/HTML/CSS</li>
 </ul>
 
+
+
+
 <h3 id="howItWorks">How It Works</h3>
+
+
 Upon entering a name and quote and clicking the button, the quote/name data is stored in a MongoDB database.
 The page is redirected (aka refreshed) and the new name/quote is shown on the page. 
 Additionally, the user can 'like' and 'delete' names/quotes from the page and database by clicking the 'thumbs up' and 'trash' icons. 
 The number of 'likes' on the page will increase by 1 upon each 'thumbs up' click. 
 
+Analytics
+
+<ul>
+  <li>React</li>
+  <li>Redux</li>
+  <li>MongoDB</li>
+  <li>Node.js</li>
+  <li>Express</li>
+  <li>Javascript/HTML/CSS</li>
+</ul>
+
+
 <h3 id="whatILearned">What I Learned</h3> 
-I learned about databases and related functions, such as creating, reading, deleting and updating data. 
-I learned how to push my code to Heroku, including how to troubleshoot Heroku error codes.
-Also, I learned about object-oriented databases, how to sort data and enter things into the DOM. 
+This was a fun project and I learned the following:
+
+Backend:
+
+<ul>
+  <li>Build models/schemas with Mongoose</li>
+  <li>Utilized JSON web tokens to securely transmit data between frontend and backend </li>
+  <li>Practiced using controllers, middleware, and routers to solidify my learning</li>
+</ul>
+
+Frontend: 
+
+<ul>
+  <li></li>
+  <li></li>
+
+</ul>
 
 <h3 id="optimizations">Optimizations:</h3>
-I would like to provide the following future features/optimizations:
+There are many additional features I plan to include, such as the following items: 
 <br><br>
 <ul>
-  <li>User login and authentication - create userbase for each user</li>
-  <li>Name and quote suggestion and auto-complete</li>
-  <li>Use a UI framework (bootstrap) to redesign the look of the website</li>
+  <li>Stock price live feed</li>
+  <li>Search institutional investment managers by name</li>
+  <li>Additional features in the user dashboard - watchlist, other SEC company filngs, improve the overall UX/UI</li>
 </ul>
