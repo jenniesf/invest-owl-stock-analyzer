@@ -96,7 +96,8 @@ My application is hosted on Heroku. See link below.
   <li>Bcryptjs</li>
   <li>JSON Web Token</li>
   <li>Javascript</li>
-  <li>HTML/CSS</li>
+  <li>HTML</li>
+  <li>CSS</li>
 </ul>
 
 <h3 id="howItWorks">How It Works</h3>
